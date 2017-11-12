@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BC04D8D1FB909E00033F09B /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC04D8C1FB909E00033F09B /* ItemDetailVC.swift */; };
+		4BC04D911FB90DBB0033F09B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC04D901FB90DBB0033F09B /* CustomTextField.swift */; };
 		4BF80B8E1FB80E50005ABB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF80B8D1FB80E50005ABB57 /* AppDelegate.swift */; };
 		4BF80B901FB80E50005ABB57 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF80B8F1FB80E50005ABB57 /* MainVC.swift */; };
 		4BF80B931FB80E50005ABB57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF80B911FB80E50005ABB57 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BC04D8C1FB909E00033F09B /* ItemDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		4BC04D901FB90DBB0033F09B /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4BF80B8A1FB80E50005ABB57 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF80B8D1FB80E50005ABB57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF80B8F1FB80E50005ABB57 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -57,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BC04D8B1FB909AA0033F09B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4BF80B8F1FB80E50005ABB57 /* MainVC.swift */,
+				4BC04D8C1FB909E00033F09B /* ItemDetailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		4BF80B811FB80E50005ABB57 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +92,7 @@
 				4BF80BCC1FB84A78005ABB57 /* View */,
 				4BF80BB21FB812B2005ABB57 /* Model */,
 				4BF80B8D1FB80E50005ABB57 /* AppDelegate.swift */,
-				4BF80B8F1FB80E50005ABB57 /* MainVC.swift */,
+				4BC04D8B1FB909AA0033F09B /* Controller */,
 				4BF80B911FB80E50005ABB57 /* Main.storyboard */,
 				4BF80B971FB80E50005ABB57 /* Assets.xcassets */,
 				4BF80B991FB80E50005ABB57 /* LaunchScreen.storyboard */,
@@ -117,6 +130,7 @@
 			children = (
 				4BF80BCD1FB84AA1005ABB57 /* MaterialView.swift */,
 				4BF80BCF1FB84CCB005ABB57 /* ItemCell.swift */,
+				4BC04D901FB90DBB0033F09B /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -204,9 +218,11 @@
 				4BF80BC61FB8366C005ABB57 /* Image+CoreDataClass.swift in Sources */,
 				4BF80BC81FB8366C005ABB57 /* ItemType+CoreDataClass.swift in Sources */,
 				4BF80B8E1FB80E50005ABB57 /* AppDelegate.swift in Sources */,
+				4BC04D8D1FB909E00033F09B /* ItemDetailVC.swift in Sources */,
 				4BF80B961FB80E50005ABB57 /* DreamLister.xcdatamodeld in Sources */,
 				4BF80BCB1FB8366C005ABB57 /* Item+CoreDataProperties.swift in Sources */,
 				4BF80BC71FB8366C005ABB57 /* Image+CoreDataProperties.swift in Sources */,
+				4BC04D911FB90DBB0033F09B /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

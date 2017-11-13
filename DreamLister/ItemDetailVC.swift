@@ -90,7 +90,11 @@ class ItemDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
 
     @IBAction func savePressed(_ sender: UIButton) {
         
-        let item: Item!
+        var item: Item!
+        let picture = Image(context: context)
+        
+        picture.image = thumbImg.image
+        
         
         if itemToEdit == nil {
             item =  Item(context: context)
@@ -98,6 +102,9 @@ class ItemDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         } else {
             item = itemToEdit
         }
+        
+        item.toImage = picture
+
         
         if let title = titleField.text {
             item.title = title
@@ -126,6 +133,8 @@ class ItemDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             titleField.text = item.title
             priceField.text = String(item.price)
             detailsField.text = item.details
+            thumbImg.image = item.toImage?.image as? UIImage
+            
             
             if let store = item.toStore {
                 
@@ -168,7 +177,7 @@ class ItemDetailVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         {
             thumbImg.image = img
         }
-        
+        imagePicker.dismiss(animated: true, completion: nil)
     }
     
 }
